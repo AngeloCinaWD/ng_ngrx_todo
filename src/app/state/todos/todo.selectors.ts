@@ -1,5 +1,3 @@
-// i selectors servono per recuperare dati dallo store
-
 import { createSelector } from '@ngrx/store';
 import { AppState } from '../app.state';
 import { TodoState } from './todo.reducer';

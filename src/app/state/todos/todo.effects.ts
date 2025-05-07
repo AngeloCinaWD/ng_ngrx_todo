@@ -1,4 +1,3 @@
-// per gestire operazioni asincrone (tipo chiamate API al server) quando un'action viene dispatchata
 import { Injectable } from '@angular/core';
 import { Actions, createEffect, ofType } from '@ngrx/effects';
 import {
