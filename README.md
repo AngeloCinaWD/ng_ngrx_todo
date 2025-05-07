@@ -15,3 +15,7 @@
 [ngrx selectors](https://ngrx.io/guide/store/selectors#selectors)
 
 [ngrx ngrx/effects](https://ngrx.io/guide/effects#ngrxeffects)
+
+[js rest e spread operators](https://www.freecodecamp.org/news/javascript-spread-and-rest-operators/#heading-the-spread-operator)
+
+[js .filter()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/filter)
