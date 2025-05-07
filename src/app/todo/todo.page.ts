@@ -11,6 +11,8 @@ import { Todo } from './todo.model';
   styleUrls: ['todo.page.scss'],
 })
 export class TodoPage implements OnInit {
+  // per recuperare dati dallo store si utilizza il metodo .select() passandogli come argomento il nome del selector che ci interessa
+  // il .select() restituisce uno stream di dati, un observable, cioè ogni volta che i dati cambiano nello store automaticamente vengono aggiornati dove sono richiesti
   public allTodos$ = this.store.select(selectAllTodos);
   public todo = '';
 
@@ -20,8 +22,6 @@ export class TodoPage implements OnInit {
     this.store.dispatch(loadTodos());
   }
 
-  // per effettuare il dispatch di un'action si utilizza il metodo .dispatch() di ngrx
-  // accetta come argomento l'action da invocare che ha come argomento la props che vogliamo arrivi al reducer
   addTodo() {
     this.store.dispatch(addTodo({ content: this.todo }));
     this.todo = '';
