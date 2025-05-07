@@ -20,6 +20,8 @@ export class TodoPage implements OnInit {
     this.store.dispatch(loadTodos());
   }
 
+  // per effettuare il dispatch di un'action si utilizza il metodo .dispatch() di ngrx
+  // accetta come argomento l'action da invocare che ha come argomento la props che vogliamo arrivi al reducer
   addTodo() {
     this.store.dispatch(addTodo({ content: this.todo }));
     this.todo = '';
