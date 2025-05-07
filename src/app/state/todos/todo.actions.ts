@@ -1,3 +1,6 @@
+// un componenente dispatches an action per indicare che qualcosa è successo
+// quando un'action viene dispatchata deve essere immediatamente gestita da un reducer, è codice sincrono
+// per eseguire qualcosa di asincrono si utizzano gli effects
 import { createAction, props } from '@ngrx/store';
 import { Todo } from '../../todo/todo.model';
 

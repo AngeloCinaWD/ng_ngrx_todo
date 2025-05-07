@@ -1,3 +1,9 @@
+// un reducer è la parte dell'app che controlla se un'action viene spedita e fa qualcosa per modificare lo state dell'app
+// di solito si ha un reducer per ogni feature o entità dell'app, come i todos, l'auth, articles etc
+// registrano il nuovo store nello store dell'app
+// lo store di solito è globale ed è dove lo state dell'app vive
+// può essere visto come un grande oggetto di dati
+// i reducers sono pure functions, cioè passando sempre lo stesso input si ottiene sempre lo stesso output. Non producono side effects
 import { createReducer, on } from '@ngrx/store';
 import {
   addTodo,

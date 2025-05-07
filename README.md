@@ -5,3 +5,13 @@
 ## Npm: 6.14.16
 
 ## [ThksTo](https://www.youtube.com/watch?v=kx0VTgTtSBg&t=13s&ab_channel=JoshuaMorony)
+
+[ngrx docs](https://ngrx.io/docs)
+
+[ngrx actions](https://ngrx.io/guide/store/actions#actions)
+
+[ngrx reducers](https://ngrx.io/guide/store/reducers#reducers)
+
+[ngrx selectors](https://ngrx.io/guide/store/selectors#selectors)
+
+[ngrx ngrx/effects](https://ngrx.io/guide/effects#ngrxeffects)
