@@ -33,15 +33,24 @@ export const todoReducer = createReducer(
     todos: state.todos.filter((todo) => todo.id !== id),
   })),
   // Trigger loading the todos
+  // durante il caricamento dei dati utilizziamo lo state attuale e cambiamo lo status di questo in loading
   on(loadTodos, (state) => ({ ...state, status: 'loading' })),
+
   // Handle successfully loaded todos
+  // in caso di successo del caricamento modifichiamo la proprietà todos dello state coi nuovi dati arrivati dal backend
+  // non ci sarà errore
+  // lo status diventa success
   on(loadTodosSuccess, (state, { todos }) => ({
     ...state,
     todos: todos,
     error: null,
     status: 'success',
   })),
+
   // Handle todos load failure
+  // in caso di errore i dati rimangono gli stessi dello state attuale
+  // si avrà un messaggio di errore
+  // lo status è error
   on(loadTodosFailure, (state, { error }) => ({
     ...state,
     error: error,

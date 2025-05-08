@@ -11,14 +11,13 @@ import { Todo } from './todo.model';
   styleUrls: ['todo.page.scss'],
 })
 export class TodoPage implements OnInit {
-  // per recuperare dati dallo store si utilizza il metodo .select() passandogli come argomento il nome del selector che ci interessa
-  // il .select() restituisce uno stream di dati, un observable, cioè ogni volta che i dati cambiano nello store automaticamente vengono aggiornati dove sono richiesti
   public allTodos$ = this.store.select(selectAllTodos);
   public todo = '';
 
   constructor(private store: Store) {}
 
   ngOnInit() {
+    // nell'oninit viene dispatchata l'action per il caricamento dei dati
     this.store.dispatch(loadTodos());
   }
 
